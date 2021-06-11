@@ -5,6 +5,7 @@
   "typescript.preferences.quoteStyle": "single",
 
   "cSpell.words": [
-    "dtmoney"
+    "dtmoney",
+    "miragejs"
   ]
 }
