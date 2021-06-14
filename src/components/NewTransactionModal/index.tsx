@@ -37,15 +37,15 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
       </button>
 
       <Container onSubmit={handleOnCreateNewTransaction}>
-        <h2>Cadastrar transação</h2>
+        <h2>New transaction</h2>
         <input
-          placeholder="Título"
+          placeholder="Title"
           value={title}
           onChange={event => setTitle(event.target.value)}
         />
         <input
           type="number"
-          placeholder="Valor"
+          placeholder="Value"
           value={value}
           onChange={event => setValue(Number(event.target.value))}
         />
@@ -71,12 +71,12 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
           </RadioBox>
         </TransactionTypeContainer>
         <input
-          placeholder="Categoria"
+          placeholder="Category"
           value={category}
           onChange={event => setCategory(event.target.value)}
         />
         <button type="submit">
-          Cadastrar
+          Save
         </button>
       </Container>
     </Modal>
