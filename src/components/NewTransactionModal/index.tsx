@@ -4,7 +4,7 @@ import closeButtonImg from '../../assets/close-button.svg';
 import incomeImg from '../../assets/money-in.svg';
 import expenditureImg from '../../assets/money-out.svg';
 import { FormEvent, useState } from 'react';
-import { api } from '../../services/api';
+import { useTransactions } from '../../hooks/useTransactions';
 
 interface NewTransactionModalProps {
   isOpen: boolean;
@@ -17,10 +17,18 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
   const [category, setCategory] = useState('');
   const [type, setType] = useState('income');
 
-  function handleOnCreateNewTransaction(event: FormEvent) {
+  const { createTransaction } = useTransactions();
+
+  async function handleOnCreateNewTransaction(event: FormEvent) {
     event.preventDefault();
-    const data = { title, value, category, type };
-    api.post('/transactions', data);
+    await createTransaction({ title, value, category, type });
+    
+    setTitle('');
+    setValue(0);
+    setCategory('');
+    setType('income');
+
+    onRequestClose();
   }
 
   return (
