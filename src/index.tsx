@@ -4,6 +4,8 @@ import { createServer, Model } from 'miragejs';
 import { App } from './App';
 
 createServer({
+  timing: 500,
+  
   models: {
     transaction: Model, 
   },
