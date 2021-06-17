@@ -13,6 +13,7 @@ It's a simple app to showcase my abilities with the React stack.
 Clone the project:
 ```shell
 git clone https://github.com/viniciuspjardim/mymoney.git
+cd mymoney
 ```
 
 Install its dependencies:
@@ -24,6 +25,9 @@ Run the project:
 ```shell
 yarn start
 ```
+
+The app will be served in
+[http://localhost:3000](http://localhost:3000/)
 
 ### Gallery
 
