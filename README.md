@@ -12,7 +12,7 @@ It's a simple app to showcase my abilities with the React stack.
 
 Clone the project:
 ```shell
-git clone TODO
+git clone https://github.com/viniciuspjardim/mymoney.git
 ```
 
 Install it's dependencies:
