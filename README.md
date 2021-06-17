@@ -1,7 +1,6 @@
 <img src=".docs/logo-gray.svg" width="240">
 
 <br>
-<br>
 
 My Money is a web app written in TypeScript / React that allow
 you to keep track of your income and expenditures. It uses
