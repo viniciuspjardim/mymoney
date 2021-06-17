@@ -15,7 +15,7 @@ Clone the project:
 git clone https://github.com/viniciuspjardim/mymoney.git
 ```
 
-Install it's dependencies:
+Install its dependencies:
 ```shell
 yarn
 ```
@@ -38,5 +38,5 @@ Adding an expenditure:
 The values are updated:  
 <img src=".docs/mymoney4.png" width="480">
 
-The full process (the colors are messed up because the GIF limitations):  
+The full process (the colors are messed up because of GIF limitations):  
 <img src=".docs/mymoney1.gif" width="480">
